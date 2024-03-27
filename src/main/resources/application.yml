@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    allow-circular-references: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:postgresql://localhost:5432/news
+    username: postgres
+    password: postgres
+    hikari:
+      schema: news_schema
+      connection-timeout: 1000
+
